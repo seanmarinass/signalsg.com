@@ -1,7 +1,9 @@
+import LandingHero from "@/components/landing/landing-hero";
+
 const Home = () => {
   return (
     <div className="">
-      <h1>Frontend Template</h1>
+      <LandingHero />
     </div>
   );
 };
