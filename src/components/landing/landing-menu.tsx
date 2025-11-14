@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const LandingMenu = () => {
   return (
-    <div className="px-5 py-20" id="about">
+    <div className="px-5 py-20" id="menu">
       <div className="max-w-7xl mx-auto space-y-8">
         <h2 className="text-site-muted font-light md:text-2xl">
           02. 메뉴 | Menu

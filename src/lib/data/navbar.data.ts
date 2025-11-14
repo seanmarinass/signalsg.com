@@ -8,7 +8,7 @@ export const NAVBAR_DATA = [
     href: "#menu",
   },
   {
-    title: "Enquire",
-    href: "#enquire",
+    title: "Visit",
+    href: "#visit",
   },
 ];
