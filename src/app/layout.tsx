@@ -2,6 +2,7 @@ import { Inter_Tight } from "next/font/google";
 
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
+import Footer from "@/components/footer";
 
 const interTight = Inter_Tight({
   subsets: ["latin"],
@@ -18,6 +19,7 @@ const RootLayout = ({
     <html lang="en">
       <body className={`${interTight.className}`}>
         <Navbar /> {children}
+        <Footer />
       </body>
     </html>
   );

@@ -2,10 +2,13 @@ import LandingAbout from "@/components/landing/landing-about";
 import LandingHero from "@/components/landing/landing-hero";
 import LandingMenu from "@/components/landing/landing-menu";
 import LandingVisit from "@/components/landing/landing-visit";
+import { landingPageMetadata } from "@/lib/config/metadata.config";
+
+export const metadata = landingPageMetadata;
 
 const Home = () => {
   return (
-    <div className="">
+    <div>
       <LandingHero />
       <LandingAbout />
       <LandingMenu />

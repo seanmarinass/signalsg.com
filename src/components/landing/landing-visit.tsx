@@ -1,6 +1,6 @@
 const LandingVisit = () => {
   return (
-    <div className="px-5 py-20" id="visit">
+    <div className="px-5 py-10 md:py-20" id="visit">
       <div className="max-w-7xl mx-auto space-y-8">
         <h2 className="text-site-muted font-light md:text-2xl">
           03. 방문 | Visit
