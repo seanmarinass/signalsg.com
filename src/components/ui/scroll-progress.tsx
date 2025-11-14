@@ -15,20 +15,17 @@ export function ScrollProgress({
   ...props
 }: ScrollProgressProps) {
   const { scrollYProgress } = useScroll()
-  const opacity = useTransform(scrollYProgress, [0, 1], [0.3, 1])
 
   return (
-    <motion.div
-      ref={ref}
-      className={cn(
-        "fixed inset-x-0 top-0 z-50 h-px origin-left bg-site-foreground",
-        className
-      )}
-      style={{
-        scaleX: scrollYProgress,
-        opacity,
-      }}
-      {...props}
-    />
+    <div className={cn("fixed inset-x-0 top-0 z-50 h-px bg-site-muted", className)}>
+      <motion.div
+        ref={ref}
+        className="h-full origin-left bg-site-foreground"
+        style={{
+          scaleX: scrollYProgress,
+        }}
+        {...props}
+      />
+    </div>
   )
 }
