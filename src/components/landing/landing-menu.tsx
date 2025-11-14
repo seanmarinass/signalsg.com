@@ -11,8 +11,8 @@ const LandingMenu = () => {
         </h2>
 
         <p className="text-2xl md:text-4xl max-w-5xl">
-          Each cocktail is a journey through Korea's most iconic destinations,
-          crafted with{" "}
+          Each cocktail is a journey through Korea&apos;s most iconic
+          destinations, crafted with{" "}
           <span className="text-site-muted">traditional ingredients</span> and{" "}
           <span className="text-site-muted">modern techniques.</span>
         </p>

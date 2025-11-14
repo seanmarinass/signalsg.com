@@ -16,9 +16,10 @@ const LandingAbout = () => {
             </span>
           </p>
           <p>
-            Born from a Seoul native's passion for authentic Korean hospitality,
-            this intimate sanctuary transforms every evening into a celebration
-            of <span className="text-site-muted">genuine connection</span> and{" "}
+            Born from a Seoul native&apos;s passion for authentic Korean
+            hospitality, this intimate sanctuary transforms every evening into a
+            celebration of{" "}
+            <span className="text-site-muted">genuine connection</span> and{" "}
             <span className="text-site-muted">timeless tradition.</span>
           </p>
         </div>

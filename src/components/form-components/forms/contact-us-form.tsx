@@ -115,7 +115,7 @@ const ContactUsForm = () => {
                 <SelectContent className="border-site-muted border rounded-xl flex bg-site-background">
                   <SelectItem value="SOCIAL">Social Media</SelectItem>
                   <SelectItem value="FRIEND">
-                    Friend's Recommendation
+                    Friend&apos;s Recommendation
                   </SelectItem>
                   <SelectItem value="AD">Advertisements</SelectItem>
                   <SelectItem value="OTHERS">Others</SelectItem>
