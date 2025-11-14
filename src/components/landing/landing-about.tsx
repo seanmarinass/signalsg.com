@@ -11,7 +11,7 @@ const LandingAbout = () => {
           <span className="text-site-muted">Tanjong Pagar</span>, Signal
           whispers the secrets of{" "}
           <span className="text-site-muted">
-            Seou&apos;s after-dark culture.
+            Seoul&apos;s after-dark culture.
           </span>{" "}
           Born from a Seoul native's passion for authentic Korean hospitality,
           this intimate sanctuary transforms every evening into a celebration of{" "}
