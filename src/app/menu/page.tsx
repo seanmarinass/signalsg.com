@@ -3,6 +3,7 @@ import ClassicCocktailsSection from "@/components/menu/classic-cocktails-section
 import FourCitiesCocktailsSection from "@/components/menu/four-cities-cocktails-section";
 import HighballsSection from "@/components/menu/highballs-section";
 import JamRepublicCocktailsSection from "@/components/menu/jam-republic-cocktails-section";
+import JapaneseWhiskysSection from "@/components/menu/japanese-whiskys-section";
 
 const MenuPage = () => {
   return (
@@ -34,6 +35,7 @@ const MenuPage = () => {
           </h3>
           <div className="flex flex-col gap-8 md:gap-12">
             <BourbonWhiskySection />
+            <JapaneseWhiskysSection />
           </div>
         </div>
       </div>

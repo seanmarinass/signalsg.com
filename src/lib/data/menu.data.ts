@@ -303,3 +303,26 @@ export const BOURBON_WHISKYS: BottledMenuItem[] = [
     bottlePrice: 300,
   },
 ];
+
+export const JAPANESE_WHISKYS: BottledMenuItem[] = [
+  {
+    name: "Nikka From The Barrel",
+    price: 25,
+    bottlePrice: 300,
+  },
+  {
+    name: "Nikka Coffey Malt",
+    price: 28,
+    bottlePrice: 350,
+  },
+  {
+    name: "Hibiki Harmony",
+    price: 30,
+    bottlePrice: 390,
+  },
+  {
+    name: "Yamazaki",
+    price: 30,
+    bottlePrice: 390,
+  },
+];
