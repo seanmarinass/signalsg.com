@@ -1,5 +1,7 @@
+import BourbonWhiskySection from "@/components/menu/bourbon-whisky-section";
 import ClassicCocktailsSection from "@/components/menu/classic-cocktails-section";
 import FourCitiesCocktailsSection from "@/components/menu/four-cities-cocktails-section";
+import HighballsSection from "@/components/menu/highballs-section";
 import JamRepublicCocktailsSection from "@/components/menu/jam-republic-cocktails-section";
 
 const MenuPage = () => {
@@ -10,12 +12,28 @@ const MenuPage = () => {
           약 | Menu
         </h2>
 
-        <div>
+        <div className="mb-16">
           <h3 className="col-span-full md:text-4xl text-2xl mb-4">Cocktails</h3>
           <div className="flex flex-col gap-8 md:gap-12">
             <FourCitiesCocktailsSection />
             <JamRepublicCocktailsSection />
             <ClassicCocktailsSection />
+          </div>
+        </div>
+
+        <div className="mb-16">
+          <h3 className="col-span-full md:text-4xl text-2xl mb-4">Highballs</h3>
+          <div className="flex flex-col gap-8 md:gap-12">
+            <HighballsSection />
+          </div>
+        </div>
+
+        <div>
+          <h3 className="col-span-full md:text-4xl text-2xl mb-4">
+            Whiskey & Spirits
+          </h3>
+          <div className="flex flex-col gap-8 md:gap-12">
+            <BourbonWhiskySection />
           </div>
         </div>
       </div>

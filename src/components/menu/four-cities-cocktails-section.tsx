@@ -22,11 +22,9 @@ const FourCitiesCocktailsSection = () => {
               </p>
             </div>
 
-            <div className="flex justify-end">
-              <p className="text-lg md:text-2xl font-medium text-site-muted">
-                ${item.price}
-              </p>
-            </div>
+            <p className="text-lg md:text-2xl font-medium text-site-muted text-right">
+              ${item.price}
+            </p>
           </div>
         </div>
       ))}

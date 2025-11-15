@@ -8,9 +8,20 @@ export interface LandingMenuItem {
 
 export interface MenuItem {
   name: string;
+  price: number | string;
+}
+
+export interface CocktailMenuItem extends MenuItem {
   korean: string;
   description: string;
-  price: number;
+}
+
+export interface HighballMenuItem extends CocktailMenuItem {
+  pairing?: string;
+}
+
+export interface BottledMenuItem extends MenuItem {
+  bottlePrice: number | string;
 }
 
 export const LANDING_MENU_ITEMS: LandingMenuItem[] = [
@@ -47,7 +58,7 @@ export const LANDING_MENU_ITEMS: LandingMenuItem[] = [
   },
 ];
 
-export const FOUR_CITIES_COCKTAILS: MenuItem[] = [
+export const FOUR_CITIES_COCKTAILS: CocktailMenuItem[] = [
   {
     name: "Seoul Sling",
     korean: "서울",
@@ -78,7 +89,7 @@ export const FOUR_CITIES_COCKTAILS: MenuItem[] = [
   },
 ];
 
-export const JAM_REPUBLIC_COCKTAILS: MenuItem[] = [
+export const JAM_REPUBLIC_COCKTAILS: CocktailMenuItem[] = [
   {
     name: "Bada's Cocktail",
     korean: "바다 칵테일",
@@ -108,7 +119,7 @@ export const JAM_REPUBLIC_COCKTAILS: MenuItem[] = [
   },
 ];
 
-export const CLASSIC_COCKTAILS: MenuItem[] = [
+export const CLASSIC_COCKTAILS: CocktailMenuItem[] = [
   {
     name: "Negroni",
     korean: "네그로니",
@@ -223,5 +234,72 @@ export const CLASSIC_COCKTAILS: MenuItem[] = [
     korean: "논알콜 칵테일",
     description: "Crafted with fresh ingredients, without the alcohol",
     price: 15,
+  },
+];
+
+export const HIGHBALLS: HighballMenuItem[] = [
+  {
+    name: "Korean Plum Highball",
+    korean: "청매실 하이볼",
+    description:
+      "A refreshing mix of whisky and Korean plum syrup, perfectly balanced with soda.",
+    price: 20,
+    pairing: "Best with: Cheese Kimchi Pancake",
+  },
+  {
+    name: "Korean Style Lemon Sour",
+    korean: "소주 레몬사워 하이볼",
+    description:
+      "Soju-based take on Japan's famous Lemon Sour. Bright, fizzy, and refreshing.",
+    price: 18,
+    pairing: "Best with: Seafood Pancake, Spicy Fried Chicken.",
+  },
+  {
+    name: "The Bow St. Collins",
+    korean: "콜린스 하이볼",
+    description:
+      "Floral Jameson highball with lemon and soda. Smooth, aromatic, and refreshing.",
+    price: 23,
+    pairing: "Best with: Pork Belly Set",
+  },
+  {
+    name: "Signal Custom Highball",
+    korean: "시그널 커스텀 하이볼",
+    description:
+      "Pick your base · Choose your vibe! Whisky/Gin/Vodka · Soda/Tonic/Ginger Ale",
+    price: "?",
+  },
+];
+
+export const BOURBON_WHISKYS: BottledMenuItem[] = [
+  {
+    name: "Buffalo Trace",
+    price: 18,
+    bottlePrice: 210,
+  },
+  {
+    name: "Blanton's Original",
+    price: 26,
+    bottlePrice: 320,
+  },
+  {
+    name: "Maker's Mark",
+    price: 19,
+    bottlePrice: 220,
+  },
+  {
+    name: "Wild Turkey 81",
+    price: 16,
+    bottlePrice: 190,
+  },
+  {
+    name: "Wild Turkey 101",
+    price: 25,
+    bottlePrice: 300,
+  },
+  {
+    name: "Woodford Reserve",
+    price: 25,
+    bottlePrice: 300,
   },
 ];

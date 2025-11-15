@@ -1,12 +1,9 @@
-import { JAM_REPUBLIC_COCKTAILS } from "@/lib/data/menu.data";
+import { HIGHBALLS } from "@/lib/data/menu.data";
 
-const JamRepublicCocktailsSection = () => {
+const HighballsSection = () => {
   return (
     <section className="grid md:grid-cols-2 gap-4">
-      <h4 className="col-span-full text-lg md:text-xl font-extralight text-site-muted">
-        02. Jam Republic
-      </h4>
-      {JAM_REPUBLIC_COCKTAILS.map((item, index) => (
+      {HIGHBALLS.map((item, index) => (
         <div
           className="px-2 py-8 inline-flex border-t border-site-muted"
           key={index}
@@ -32,4 +29,4 @@ const JamRepublicCocktailsSection = () => {
   );
 };
 
-export default JamRepublicCocktailsSection;
+export default HighballsSection;
