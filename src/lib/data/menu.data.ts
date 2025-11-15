@@ -579,3 +579,16 @@ export const CHAMPAGNES: BottledMenuItem[] = [
     price: 380,
   },
 ];
+
+export const WINES: BottledMenuItem[] = [
+  {
+    name: "Nobless Cabernet Sauvignon (Red)",
+    price: 15,
+    bottlePrice: 75,
+  },
+  {
+    name: "Nobless Chardonnay (White)",
+    price: 15,
+    bottlePrice: 75,
+  },
+];
