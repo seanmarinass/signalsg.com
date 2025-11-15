@@ -1,11 +1,12 @@
-import BourbonWhiskySection from "@/components/menu/bourbon-whisky-section";
-import ClassicCocktailsSection from "@/components/menu/classic-cocktails-section";
-import FourCitiesCocktailsSection from "@/components/menu/four-cities-cocktails-section";
+import BourbonWhiskySection from "@/components/menu/whiskys/bourbon-whisky-section";
+import ClassicCocktailsSection from "@/components/menu/cocktails/classic-cocktails-section";
+import FourCitiesCocktailsSection from "@/components/menu/cocktails/four-cities-cocktails-section";
 import HighballsSection from "@/components/menu/highballs-section";
-import IrishWhiskeysSection from "@/components/menu/irish-whiskys-section";
-import JamRepublicCocktailsSection from "@/components/menu/jam-republic-cocktails-section";
-import JapaneseWhiskysSection from "@/components/menu/japanese-whiskys-section";
-import ScotchSingleMaltWhiskysSection from "@/components/menu/scotch-single-malt-whiskys-section";
+import IrishWhiskeysSection from "@/components/menu/whiskys/irish-whiskys-section";
+import JamRepublicCocktailsSection from "@/components/menu/cocktails/jam-republic-cocktails-section";
+import JapaneseWhiskysSection from "@/components/menu/whiskys/japanese-whiskys-section";
+import ScotchSingleMaltWhiskysSection from "@/components/menu/whiskys/scotch-single-malt-whiskys-section";
+import CognacBrandySection from "@/components/menu/cognac-brandy-section";
 
 const MenuPage = () => {
   return (
@@ -31,7 +32,7 @@ const MenuPage = () => {
           </div>
         </div>
 
-        <div>
+        <div className="mb-16">
           <h3 className="col-span-full md:text-4xl text-2xl mb-4">
             Whiskey & Spirits
           </h3>
@@ -40,6 +41,15 @@ const MenuPage = () => {
             <JapaneseWhiskysSection />
             <ScotchSingleMaltWhiskysSection />
             <IrishWhiskeysSection />
+          </div>
+        </div>
+
+        <div>
+          <h3 className="col-span-full md:text-4xl text-2xl mb-4">
+            Cognac & Brandy
+          </h3>
+          <div className="flex flex-col gap-8 md:gap-12">
+            <CognacBrandySection />
           </div>
         </div>
       </div>

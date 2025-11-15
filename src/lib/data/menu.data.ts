@@ -423,3 +423,20 @@ export const IRISH_WHISKEYS: BottledMenuItem[] = [
     bottlePrice: 240,
   },
 ];
+
+export const COGNACS_AND_BRANDYS: BottledMenuItem[] = [
+  {
+    name: "Martell VSOP",
+    price: 25,
+    bottlePrice: 270,
+  },
+  {
+    name: "Martell Cordon Bleu",
+    price: 750,
+  },
+  {
+    name: "Hennessy VSOP",
+    price: 25,
+    bottlePrice: 270,
+  },
+];
