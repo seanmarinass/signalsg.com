@@ -10,7 +10,7 @@ const LandingMenu = () => {
           02. 메뉴 | Menu
         </h2>
 
-        <p className="text-2xl md:text-4xl max-w-5xl">
+        <p className="text-3xl md:text-5xl max-w-5xl">
           Each cocktail is a journey through Korea&apos;s most iconic
           destinations, crafted with{" "}
           <span className="text-site-muted">traditional ingredients</span> and{" "}
@@ -45,8 +45,7 @@ const LandingMenu = () => {
 
         <Link
           className="flex items-center px-3 py-2 w-fit mx-auto border-transparent hover:border-site-muted border transition-colors"
-          href="https://firebasestorage.googleapis.com/v0/b/signal-913f4.firebasestorage.app/o/Signal%20%E1%84%89%E1%85%AE%E1%86%AF%E1%84%8B%E1%85%B3%E1%86%B7%E1%84%85%E1%85%AD%20menu.pdf?alt=media&token=ab4ce828-caa1-42f1-aade-4deb5b5a5230"
-          target="_blank"
+          href="/menu"
         >
           Explore full menu <ChevronRight className="size-4 ml-2" />
         </Link>

@@ -6,7 +6,7 @@ const LandingAbout = () => {
           01. 약 | About
         </h2>
 
-        <div className="text-2xl md:text-4xl max-w-5xl space-y-4">
+        <div className="text-3xl md:text-5xl max-w-5xl space-y-4">
           <p>
             In the bustling streets of{" "}
             <span className="text-site-muted">Tanjong Pagar</span>, Signal

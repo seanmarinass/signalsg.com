@@ -18,7 +18,7 @@ const LandingVisit = () => {
           </div>
 
           <div className="space-y-4">
-            <p className="text-2xl md:text-4xl">Visit Signal</p>
+            <p className="text-3xl md:text-5xl">Visit Signal</p>
 
             <div className="gap-8 flex flex-col">
               <div className="text-base md:text-lg font-light">
