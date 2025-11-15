@@ -2,6 +2,7 @@ import BourbonWhiskySection from "@/components/menu/bourbon-whisky-section";
 import ClassicCocktailsSection from "@/components/menu/classic-cocktails-section";
 import FourCitiesCocktailsSection from "@/components/menu/four-cities-cocktails-section";
 import HighballsSection from "@/components/menu/highballs-section";
+import IrishWhiskeysSection from "@/components/menu/irish-whiskys-section";
 import JamRepublicCocktailsSection from "@/components/menu/jam-republic-cocktails-section";
 import JapaneseWhiskysSection from "@/components/menu/japanese-whiskys-section";
 import ScotchSingleMaltWhiskysSection from "@/components/menu/scotch-single-malt-whiskys-section";
@@ -38,6 +39,7 @@ const MenuPage = () => {
             <BourbonWhiskySection />
             <JapaneseWhiskysSection />
             <ScotchSingleMaltWhiskysSection />
+            <IrishWhiskeysSection />
           </div>
         </div>
       </div>

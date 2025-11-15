@@ -1,13 +1,13 @@
-import { JAPANESE_WHISKYS } from "@/lib/data/menu.data";
+import { IRISH_WHISKEYS } from "@/lib/data/menu.data";
 
-const JapaneseWhiskysSection = () => {
+const IrishWhiskeysSection = () => {
   return (
     <section className="grid md:grid-cols-2 gap-4">
       <h4 className="col-span-full text-lg md:text-xl font-extralight text-site-muted">
-        02. Japanese Whisky | 40ml / Bottle
+        03. Irish Whiskey | 40ml / Bottle
       </h4>
 
-      {JAPANESE_WHISKYS.map((item, index) => (
+      {IRISH_WHISKEYS.map((item, index) => (
         <div
           className="px-2 py-8 inline-flex border-t border-site-muted"
           key={index}
@@ -16,7 +16,8 @@ const JapaneseWhiskysSection = () => {
             <p className="text-lg md:text-2xl col-span-3">{item.name}</p>
 
             <p className="text-lg md:text-2xl font-medium text-site-muted w-full text-right">
-              ${item.price} / ${item.bottlePrice}
+              ${item.price}{" "}
+              {item.bottlePrice && <span>/ ${item.bottlePrice}</span>}
             </p>
           </div>
         </div>
@@ -25,4 +26,4 @@ const JapaneseWhiskysSection = () => {
   );
 };
 
-export default JapaneseWhiskysSection;
+export default IrishWhiskeysSection;

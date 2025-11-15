@@ -410,3 +410,16 @@ export const SCOTCH_SINGLE_MALT_WHISKYS: BottledMenuItem[] = [
     bottlePrice: 270,
   },
 ];
+
+export const IRISH_WHISKEYS: BottledMenuItem[] = [
+  {
+    name: "Jameson",
+    price: 16,
+    bottlePrice: 180,
+  },
+  {
+    name: "Redbreast 12",
+    price: 22,
+    bottlePrice: 240,
+  },
+];
