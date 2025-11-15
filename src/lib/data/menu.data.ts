@@ -21,7 +21,7 @@ export interface HighballMenuItem extends CocktailMenuItem {
 }
 
 export interface BottledMenuItem extends MenuItem {
-  bottlePrice: number | string;
+  bottlePrice?: number | string;
 }
 
 export const LANDING_MENU_ITEMS: LandingMenuItem[] = [
@@ -324,5 +324,89 @@ export const JAPANESE_WHISKYS: BottledMenuItem[] = [
     name: "Yamazaki",
     price: 30,
     bottlePrice: 390,
+  },
+];
+
+export const SCOTCH_SINGLE_MALT_WHISKYS: BottledMenuItem[] = [
+  {
+    name: "Ardbeg 10",
+    price: 25,
+    bottlePrice: 300,
+  },
+  {
+    name: "Balvenie 12 Double Wood",
+    price: 26,
+    bottlePrice: 320,
+  },
+  {
+    name: "Balvenie 14 Caribbean Cask",
+    price: 29,
+    bottlePrice: 400,
+  },
+  {
+    name: "Balvenie 21 Port Wood",
+    price: 1100,
+  },
+  {
+    name: "Dalmore 12",
+    price: 25,
+    bottlePrice: 300,
+  },
+  {
+    name: "Dalmore 15",
+    price: 36,
+    bottlePrice: 450,
+  },
+  {
+    name: "Glenfiddich 12",
+    price: 22,
+    bottlePrice: 240,
+  },
+  {
+    name: "Glenfiddich 15",
+    price: 35,
+    bottlePrice: 410,
+  },
+  {
+    name: "Glenfiddich 18",
+    price: 530,
+  },
+  {
+    name: "Glenfiddich 21",
+    price: 880,
+  },
+  {
+    name: "Glenmorangie 10",
+    price: 21,
+    bottlePrice: 220,
+  },
+  {
+    name: "Glenmorangie 14 Quinta Ruban",
+    price: 29,
+    bottlePrice: 360,
+  },
+  {
+    name: "Glenmorangie Signet",
+    price: 850,
+  },
+  {
+    name: "Laphroaig 10",
+    price: 28,
+    bottlePrice: 330,
+  },
+  {
+    name: "Lagavulin 16",
+    price: 38,
+    bottlePrice: 460,
+  },
+  {
+    name: "Oban 14",
+    price: 29,
+    bottlePrice: 350,
+  },
+  {
+    name: "Singleton 15",
+    price: 25,
+    bottlePrice: 270,
   },
 ];

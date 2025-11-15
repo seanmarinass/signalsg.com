@@ -4,6 +4,7 @@ import FourCitiesCocktailsSection from "@/components/menu/four-cities-cocktails-
 import HighballsSection from "@/components/menu/highballs-section";
 import JamRepublicCocktailsSection from "@/components/menu/jam-republic-cocktails-section";
 import JapaneseWhiskysSection from "@/components/menu/japanese-whiskys-section";
+import ScotchSingleMaltWhiskysSection from "@/components/menu/scotch-single-malt-whiskys-section";
 
 const MenuPage = () => {
   return (
@@ -36,6 +37,7 @@ const MenuPage = () => {
           <div className="flex flex-col gap-8 md:gap-12">
             <BourbonWhiskySection />
             <JapaneseWhiskysSection />
+            <ScotchSingleMaltWhiskysSection />
           </div>
         </div>
       </div>
