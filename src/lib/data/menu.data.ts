@@ -592,3 +592,26 @@ export const WINES: BottledMenuItem[] = [
     bottlePrice: 75,
   },
 ];
+
+export const BEERS: MenuItem[] = [
+  {
+    name: "Asahi Super Dry (Draft)",
+    price: 15,
+  },
+  {
+    name: "Guinness (Micro Draught Dispenser)",
+    price: 18,
+  },
+  {
+    name: "Peroni",
+    price: 13,
+  },
+  {
+    name: "Krush (330ml)",
+    price: 12,
+  },
+  {
+    name: "Krush 3+1",
+    price: 36,
+  },
+];
