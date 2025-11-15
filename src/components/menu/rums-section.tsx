@@ -12,7 +12,8 @@ const RumsSection = () => {
             <p className="text-lg md:text-2xl col-span-3">{item.name}</p>
 
             <p className="text-lg md:text-2xl font-medium text-site-muted w-full text-right">
-              ${item.price} / ${item.bottlePrice}
+              ${item.price}
+              {item.bottlePrice && <span> / ${item.bottlePrice}</span>}
             </p>
           </div>
         </div>

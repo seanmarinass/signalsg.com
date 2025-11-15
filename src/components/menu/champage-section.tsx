@@ -1,9 +1,9 @@
-import { GINS } from "@/lib/data/menu.data";
+import { CHAMPAGNES } from "@/lib/data/menu.data";
 
-const GinsSection = () => {
+const ChampagneSection = () => {
   return (
     <section className="grid md:grid-cols-2 gap-4">
-      {GINS.map((item, index) => (
+      {CHAMPAGNES.map((item, index) => (
         <div
           className="px-2 py-8 inline-flex border-t border-site-muted"
           key={index}
@@ -22,4 +22,4 @@ const GinsSection = () => {
   );
 };
 
-export default GinsSection;
+export default ChampagneSection;

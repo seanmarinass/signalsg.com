@@ -11,6 +11,7 @@ import VodkasSection from "@/components/menu/vodkas-section";
 import GinsSection from "@/components/menu/gin-section";
 import RumsSection from "@/components/menu/rums-section";
 import TequilaMezcalSection from "@/components/menu/tequila-mezcal-section";
+import ChampagneSection from "@/components/menu/champage-section";
 
 const MenuPage = () => {
   return (
@@ -107,6 +108,18 @@ const MenuPage = () => {
             </div>
             <div className="flex flex-col gap-8 md:gap-12">
               <TequilaMezcalSection />
+            </div>
+          </div>
+
+          <div>
+            <div className="space-y-4 mb-4">
+              <h3 className="md:text-4xl text-2xl">Champagne</h3>
+              <p className="text-lg md:text-xl font-extralight text-site-muted">
+                Glass / Bottle
+              </p>
+            </div>
+            <div className="flex flex-col gap-8 md:gap-12">
+              <ChampagneSection />
             </div>
           </div>
         </div>

@@ -551,3 +551,31 @@ export const TEQUILAS: BottledMenuItem[] = [
     bottlePrice: 280,
   },
 ];
+
+export const CHAMPAGNES: BottledMenuItem[] = [
+  {
+    name: "Astoria Prosecco",
+    price: 15,
+    bottlePrice: 75,
+  },
+  {
+    name: "Moët & Chandon",
+    price: 220,
+  },
+  {
+    name: "Veuve Clicquot",
+    price: 250,
+  },
+  {
+    name: "Dom Pérignon",
+    price: 820,
+  },
+  {
+    name: "Krug Grande Cuvée",
+    price: 790,
+  },
+  {
+    name: "Ruinart Blanc de Blancs",
+    price: 380,
+  },
+];
