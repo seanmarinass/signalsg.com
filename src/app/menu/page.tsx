@@ -22,9 +22,7 @@ const MenuPage = () => {
 
         <div className="flex flex-col gap-16">
           <div>
-            <h3 className="col-span-full md:text-4xl text-2xl mb-4">
-              Cocktails
-            </h3>
+            <h3 className="md:text-4xl text-2xl mb-4">Cocktails</h3>
             <div className="flex flex-col gap-8 md:gap-12">
               <FourCitiesCocktailsSection />
               <JamRepublicCocktailsSection />
@@ -33,18 +31,14 @@ const MenuPage = () => {
           </div>
 
           <div>
-            <h3 className="col-span-full md:text-4xl text-2xl mb-4">
-              Highballs
-            </h3>
+            <h3 className="md:text-4xl text-2xl mb-4">Highballs</h3>
             <div className="flex flex-col gap-8 md:gap-12">
               <HighballsSection />
             </div>
           </div>
 
           <div>
-            <h3 className="col-span-full md:text-4xl text-2xl mb-4">
-              Whiskey & Spirits
-            </h3>
+            <h3 className="md:text-4xl text-2xl mb-4">Whiskey & Spirits</h3>
             <div className="flex flex-col gap-8 md:gap-12">
               <BourbonWhiskySection />
               <JapaneseWhiskysSection />
@@ -54,39 +48,63 @@ const MenuPage = () => {
           </div>
 
           <div>
-            <h3 className="col-span-full md:text-4xl text-2xl mb-4">
-              Cognac & Brandy
-            </h3>
+            <div className="space-y-4 mb-4">
+              <h3 className="md:text-4xl text-2xl">Cognac & Brandy</h3>
+              <p className="text-lg md:text-xl font-extralight text-site-muted">
+                40ml / Bottle
+              </p>
+            </div>
+
             <div className="flex flex-col gap-8 md:gap-12">
               <CognacBrandySection />
             </div>
           </div>
 
           <div>
-            <h3 className="col-span-full md:text-4xl text-2xl mb-4">Vodka</h3>
+            <div className="space-y-4 mb-4">
+              <h3 className="md:text-4xl text-2xl">Vodka</h3>
+              <p className="text-lg md:text-xl font-extralight text-site-muted">
+                40ml / Bottle
+              </p>
+            </div>
+
             <div className="flex flex-col gap-8 md:gap-12">
               <VodkasSection />
             </div>
           </div>
 
           <div>
-            <h3 className="col-span-full md:text-4xl text-2xl mb-4">Gin</h3>
+            <div className="space-y-4 mb-4">
+              <h3 className="md:text-4xl text-2xl">Gin</h3>
+              <p className="text-lg md:text-xl font-extralight text-site-muted">
+                40ml / Bottle
+              </p>
+            </div>
             <div className="flex flex-col gap-8 md:gap-12">
               <GinsSection />
             </div>
           </div>
 
           <div>
-            <h3 className="col-span-full md:text-4xl text-2xl mb-4">Rum</h3>
+            <div className="space-y-4 mb-4">
+              <h3 className="md:text-4xl text-2xl">Rum</h3>
+              <p className="text-lg md:text-xl font-extralight text-site-muted">
+                40ml / Bottle
+              </p>
+            </div>
+
             <div className="flex flex-col gap-8 md:gap-12">
               <RumsSection />
             </div>
           </div>
 
           <div>
-            <h3 className="col-span-full md:text-4xl text-2xl mb-4">
-              Tequila & Mezcal
-            </h3>
+            <div className="space-y-4 mb-4">
+              <h3 className="md:text-4xl text-2xl">Tequila & Mezcal</h3>
+              <p className="text-lg md:text-xl font-extralight text-site-muted">
+                40ml / Bottle
+              </p>
+            </div>
             <div className="flex flex-col gap-8 md:gap-12">
               <TequilaMezcalSection />
             </div>
