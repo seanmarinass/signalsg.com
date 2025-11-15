@@ -77,3 +77,33 @@ export const FOUR_CITIES_COCKTAILS: MenuItem[] = [
     price: 26,
   },
 ];
+
+export const JAM_REPUBLIC_COCKTAILS: MenuItem[] = [
+  {
+    name: "Bada's Cocktail",
+    korean: "바다 칵테일",
+    description:
+      "A perfect balance of sweet and sour notes with hints of peach.",
+    price: 24,
+  },
+  {
+    name: "Kirsten's Cocktail",
+    korean: "커스틴",
+    description: "A refreshing gin-based cocktail with a slight sour touch.",
+    price: 24,
+  },
+  {
+    name: "Ling's Cocktail",
+    korean: "링",
+    description:
+      "A classic warm cocktail that is strong and sweet, finished off with an orange scent.",
+    price: 24,
+  },
+  {
+    name: "Audrey's Cocktail",
+    korean: "오드리",
+    description:
+      "Well-balanced & refreshing with hints of grapefruit and lychee.",
+    price: 24,
+  },
+];
