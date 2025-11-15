@@ -615,3 +615,38 @@ export const BEERS: MenuItem[] = [
     price: 36,
   },
 ];
+
+export const NON_ALCOHOLIC_DRINKS: MenuItem[] = [
+  {
+    name: "Tonic Water",
+    price: 6,
+  },
+  {
+    name: "Soda Water",
+    price: 6,
+  },
+  {
+    name: "Coke",
+    price: 6,
+  },
+  {
+    name: "Sprite",
+    price: 6,
+  },
+  {
+    name: "Tea (Hot / Iced)",
+    price: 7,
+  },
+  {
+    name: "Coffee (Hot / Iced)",
+    price: 7,
+  },
+  {
+    name: "Aqua Panna Still",
+    price: 9,
+  },
+  {
+    name: "S.Pellegrino Sparkling",
+    price: 9,
+  },
+];
