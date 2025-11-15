@@ -107,3 +107,121 @@ export const JAM_REPUBLIC_COCKTAILS: MenuItem[] = [
     price: 24,
   },
 ];
+
+export const CLASSIC_COCKTAILS: MenuItem[] = [
+  {
+    name: "Negroni",
+    korean: "네그로니",
+    description:
+      "A perfect balance of gin, Campari, and sweet vermouth — bitter yet sophisticated.",
+    price: 20,
+  },
+  {
+    name: "Greyhound",
+    korean: "그레이하운드",
+    description:
+      "Crisp vodka with fresh grapefruit juice — bright and refreshing.",
+    price: 20,
+  },
+  {
+    name: "God Father",
+    korean: "갓파더",
+    description:
+      "Smooth Scotch blended with Amaretto for a rich, nutty harmony.",
+    price: 24,
+  },
+  {
+    name: "Manhattan",
+    korean: "맨하탄",
+    description:
+      "Whiskey stirred with vermouth and bitters — bold, deep, and classic.",
+    price: 21,
+  },
+  {
+    name: "Amaretto Sour",
+    korean: "아마레또 사워",
+    description:
+      "Sweet almond liqueur with a citrusy twist — soft, creamy, and refreshing.",
+    price: 22,
+  },
+  {
+    name: "AMF",
+    korean: "AMF",
+    description:
+      "A vibrant blue cocktail with vodka, rum, gin, tequila & citrus soda — wild and fun.",
+    price: 25,
+  },
+  {
+    name: "Whisky Sour",
+    korean: "위스키 사워",
+    description:
+      "Whiskey, lemon, and foam — a perfect balance of tart and smooth.",
+    price: 22,
+  },
+  {
+    name: "Long Island Iced Tea",
+    korean: "롱아일랜드 아이스티",
+    description:
+      "Five spirits, lemon, and cola — stronger than it looks, dangerously smooth.",
+    price: 25,
+  },
+  {
+    name: "Aperol Spritz",
+    korean: "아페롤 스프리츠",
+    description:
+      "A sparkling mix of Aperol, prosecco, and soda — light, bright, and irresistible.",
+    price: 20,
+  },
+  {
+    name: "Old Fashion",
+    korean: "올드패션",
+    description:
+      "A timeless mix of whiskey, sugar, and bitters — simple, bold, and elegant.",
+    price: 23,
+  },
+  {
+    name: "Salty Dog",
+    korean: "솔티 도그",
+    description:
+      "A Greyhound with a salted rim — citrusy, smooth, and just the right kick.",
+    price: 20,
+  },
+  {
+    name: "Martini",
+    korean: "마티니",
+    description: "Gin or vodka with dry vermouth — clean, dry, and timeless.",
+    price: 19,
+  },
+  {
+    name: "Milo Cocktail",
+    korean: "마일로 칵테일",
+    description:
+      "Chocolatey, creamy, and nostalgic — a playful twist on comfort in a glass.",
+    price: 22,
+  },
+  {
+    name: "Lemon Drop",
+    korean: "레몬 드랍",
+    description: "Sweet, tart, and crisp — vodka and lemon in perfect harmony.",
+    price: 16,
+  },
+  {
+    name: "Irish Bomb",
+    korean: "아이리쉬 밤",
+    description:
+      "A bold mix of Irish stout, whiskey, and cream — rich, creamy, and explosive fun.",
+    price: 19,
+  },
+  {
+    name: "Bartender's Special",
+    korean: "Surprise Me",
+    description: "Trust the bartender — tonight's secret in a glass.",
+    price: 18,
+  },
+  {
+    name: "Mocktail",
+    korean: "논알콜 칵테일",
+    description: "Crafted with fresh ingredients, without the alcohol",
+    price: 15,
+  },
+];

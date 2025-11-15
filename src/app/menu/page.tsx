@@ -1,3 +1,4 @@
+import ClassicCocktailsSection from "@/components/menu/classic-cocktails-section";
 import FourCitiesCocktailsSection from "@/components/menu/four-cities-cocktails-section";
 import JamRepublicCocktailsSection from "@/components/menu/jam-republic-cocktails-section";
 
@@ -14,6 +15,7 @@ const MenuPage = () => {
           <div className="flex flex-col gap-8 md:gap-12">
             <FourCitiesCocktailsSection />
             <JamRepublicCocktailsSection />
+            <ClassicCocktailsSection />
           </div>
         </div>
       </div>
