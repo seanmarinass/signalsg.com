@@ -7,6 +7,8 @@ import JamRepublicCocktailsSection from "@/components/menu/cocktails/jam-republi
 import JapaneseWhiskysSection from "@/components/menu/whiskys/japanese-whiskys-section";
 import ScotchSingleMaltWhiskysSection from "@/components/menu/whiskys/scotch-single-malt-whiskys-section";
 import CognacBrandySection from "@/components/menu/cognac-brandy-section";
+import VodkasSection from "@/components/menu/vodkas-section";
+import GinsSection from "@/components/menu/gin-section";
 
 const MenuPage = () => {
   return (
@@ -16,40 +18,60 @@ const MenuPage = () => {
           약 | Menu
         </h2>
 
-        <div className="mb-16">
-          <h3 className="col-span-full md:text-4xl text-2xl mb-4">Cocktails</h3>
-          <div className="flex flex-col gap-8 md:gap-12">
-            <FourCitiesCocktailsSection />
-            <JamRepublicCocktailsSection />
-            <ClassicCocktailsSection />
+        <div className="flex flex-col gap-16">
+          <div>
+            <h3 className="col-span-full md:text-4xl text-2xl mb-4">
+              Cocktails
+            </h3>
+            <div className="flex flex-col gap-8 md:gap-12">
+              <FourCitiesCocktailsSection />
+              <JamRepublicCocktailsSection />
+              <ClassicCocktailsSection />
+            </div>
           </div>
-        </div>
 
-        <div className="mb-16">
-          <h3 className="col-span-full md:text-4xl text-2xl mb-4">Highballs</h3>
-          <div className="flex flex-col gap-8 md:gap-12">
-            <HighballsSection />
+          <div>
+            <h3 className="col-span-full md:text-4xl text-2xl mb-4">
+              Highballs
+            </h3>
+            <div className="flex flex-col gap-8 md:gap-12">
+              <HighballsSection />
+            </div>
           </div>
-        </div>
 
-        <div className="mb-16">
-          <h3 className="col-span-full md:text-4xl text-2xl mb-4">
-            Whiskey & Spirits
-          </h3>
-          <div className="flex flex-col gap-8 md:gap-12">
-            <BourbonWhiskySection />
-            <JapaneseWhiskysSection />
-            <ScotchSingleMaltWhiskysSection />
-            <IrishWhiskeysSection />
+          <div>
+            <h3 className="col-span-full md:text-4xl text-2xl mb-4">
+              Whiskey & Spirits
+            </h3>
+            <div className="flex flex-col gap-8 md:gap-12">
+              <BourbonWhiskySection />
+              <JapaneseWhiskysSection />
+              <ScotchSingleMaltWhiskysSection />
+              <IrishWhiskeysSection />
+            </div>
           </div>
-        </div>
 
-        <div>
-          <h3 className="col-span-full md:text-4xl text-2xl mb-4">
-            Cognac & Brandy
-          </h3>
-          <div className="flex flex-col gap-8 md:gap-12">
-            <CognacBrandySection />
+          <div>
+            <h3 className="col-span-full md:text-4xl text-2xl mb-4">
+              Cognac & Brandy
+            </h3>
+            <div className="flex flex-col gap-8 md:gap-12">
+              <CognacBrandySection />
+            </div>
+          </div>
+
+          <div>
+            <h3 className="col-span-full md:text-4xl text-2xl mb-4">Vodka</h3>
+            <div className="flex flex-col gap-8 md:gap-12">
+              <VodkasSection />
+            </div>
+          </div>
+
+          <div>
+            <h3 className="col-span-full md:text-4xl text-2xl mb-4">Gin</h3>
+            <div className="flex flex-col gap-8 md:gap-12">
+              <GinsSection />
+            </div>
           </div>
         </div>
       </div>

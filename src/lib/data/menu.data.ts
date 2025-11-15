@@ -440,3 +440,69 @@ export const COGNACS_AND_BRANDYS: BottledMenuItem[] = [
     bottlePrice: 270,
   },
 ];
+
+export const VODKAS: BottledMenuItem[] = [
+  {
+    name: "Belvedere",
+    price: 26,
+    bottlePrice: 270,
+  },
+  {
+    name: "Beluga",
+    price: 29,
+    bottlePrice: 320,
+  },
+  {
+    name: "Grey Goose",
+    price: 27,
+    bottlePrice: 280,
+  },
+];
+
+export const GINS: BottledMenuItem[] = [
+  {
+    name: "Buja Korea Gin",
+    price: 28,
+    bottlePrice: 320,
+  },
+  {
+    name: "Kori Korea Gin",
+    price: 29,
+    bottlePrice: 330,
+  },
+  {
+    name: "Botanist",
+    price: 26,
+    bottlePrice: 280,
+  },
+  {
+    name: "Forty Spotted",
+    price: 27,
+    bottlePrice: 300,
+  },
+  {
+    name: "Hendrick's",
+    price: 24,
+    bottlePrice: 260,
+  },
+  {
+    name: "Malfy",
+    price: 22,
+    bottlePrice: 230,
+  },
+  {
+    name: "Monkey 47 Dry",
+    price: 25,
+    bottlePrice: 270,
+  },
+  {
+    name: "Monkey 47 Sloe",
+    price: 24,
+    bottlePrice: 260,
+  },
+  {
+    name: "Roku",
+    price: 22,
+    bottlePrice: 230,
+  },
+];
