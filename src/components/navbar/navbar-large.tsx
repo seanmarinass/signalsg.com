@@ -11,7 +11,9 @@ const NavbarLarge = () => {
     <nav className="px-5 py-4 backdrop-blur-sm fixed top-0 left-0 right-0 z-40 bg-site-background/80">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-12 w-full">
-          <p className="text-xl font-semibold">SIGNAL</p>
+          <Link className="text-xl font-semibold" href="/">
+            SIGNAL
+          </Link>
 
           <div className="relative flex-1">
             <ScrollProgress className="absolute" />

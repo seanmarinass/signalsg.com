@@ -1,4 +1,4 @@
-import { MENU_ITEMS } from "@/lib/data/menu.data";
+import { LANDING_MENU_ITEMS } from "@/lib/data/menu.data";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
@@ -18,7 +18,7 @@ const LandingMenu = () => {
         </p>
 
         <div className="flex flex-col mt-16">
-          {MENU_ITEMS.map((item, index) => (
+          {LANDING_MENU_ITEMS.map((item, index) => (
             <div
               className="px-2 py-8 inline-flex border-t border-site-muted"
               key={index}

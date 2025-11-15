@@ -1,4 +1,4 @@
-export interface MenuItem {
+export interface LandingMenuItem {
   name: string;
   korean: string;
   description: string;
@@ -6,7 +6,14 @@ export interface MenuItem {
   city: string;
 }
 
-export const MENU_ITEMS: MenuItem[] = [
+export interface MenuItem {
+  name: string;
+  korean: string;
+  description: string;
+  price: number;
+}
+
+export const LANDING_MENU_ITEMS: LandingMenuItem[] = [
   {
     name: "Seoul Sling",
     korean: "서울",
@@ -37,5 +44,36 @@ export const MENU_ITEMS: MenuItem[] = [
     description: "A crisp highball with omija's unique sweet-tart balance.",
     ingredients: ["Whisky", "Omija", "Ginger", "Soda"],
     city: "Jeonju",
+  },
+];
+
+export const FOUR_CITIES_COCKTAILS: MenuItem[] = [
+  {
+    name: "Seoul Sling",
+    korean: "서울",
+    description:
+      "Floral & citrus gin-based. A refreshing floral gin cocktail inspired by Seoul’s modern energy.",
+    price: 26,
+  },
+  {
+    name: "Sea of Busan",
+    korean: "부산",
+    description:
+      "Refreshing yuzu, blue curacao, and sea salt foam. A seaside breeze in a glass — bright, tangy, and slightly salty.",
+    price: 26,
+  },
+  {
+    name: "Jeju Halla Sparkle",
+    korean: "서울",
+    description:
+      "Tangerine liqueur & sparkling soju, bright and smooth. Jeju’s citrus sunshine captured in a sparkling, elegant blend.",
+    price: 26,
+  },
+  {
+    name: "Jeonju Omija Highball",
+    korean: "전주",
+    description:
+      "Korean five-flavor berry meets whisky soda. A crisp highball with omija’s unique sweet-tart balance.",
+    price: 26,
   },
 ];
