@@ -4,7 +4,7 @@ const IrishWhiskeysSection = () => {
   return (
     <section className="grid md:grid-cols-2 gap-4">
       <h4 className="col-span-full text-lg md:text-xl font-extralight text-site-muted">
-        03. Irish Whiskey | 40ml / Bottle
+        04. Irish Whiskey | 40ml / Bottle
       </h4>
 
       {IRISH_WHISKEYS.map((item, index) => (
