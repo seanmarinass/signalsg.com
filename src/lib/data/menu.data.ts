@@ -506,3 +506,21 @@ export const GINS: BottledMenuItem[] = [
     bottlePrice: 230,
   },
 ];
+
+export const RUMS: BottledMenuItem[] = [
+  {
+    name: "Bacardi Carta Blanca",
+    price: 13,
+    bottlePrice: 160,
+  },
+  {
+    name: "Plantation Dark Rum",
+    price: 17,
+    bottlePrice: 180,
+  },
+  {
+    name: "Ron Zacapa 23",
+    price: 27,
+    bottlePrice: 300,
+  },
+];
