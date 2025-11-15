@@ -524,3 +524,30 @@ export const RUMS: BottledMenuItem[] = [
     bottlePrice: 300,
   },
 ];
+
+export const TEQUILAS: BottledMenuItem[] = [
+  {
+    name: "Espolon Blanco",
+    price: 18,
+    bottlePrice: 220,
+  },
+  {
+    name: "Don Julio Blanco",
+    price: 19,
+    bottlePrice: 240,
+  },
+  {
+    name: "Patron Silver",
+    price: 25,
+    bottlePrice: 290,
+  },
+  {
+    name: "Patron El Cielo",
+    price: 700,
+  },
+  {
+    name: "1800 Anejo",
+    price: 24,
+    bottlePrice: 280,
+  },
+];

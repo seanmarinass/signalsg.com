@@ -10,6 +10,7 @@ import CognacBrandySection from "@/components/menu/cognac-brandy-section";
 import VodkasSection from "@/components/menu/vodkas-section";
 import GinsSection from "@/components/menu/gin-section";
 import RumsSection from "@/components/menu/rums-section";
+import TequilaMezcalSection from "@/components/menu/tequila-mezcal-section";
 
 const MenuPage = () => {
   return (
@@ -79,6 +80,15 @@ const MenuPage = () => {
             <h3 className="col-span-full md:text-4xl text-2xl mb-4">Rum</h3>
             <div className="flex flex-col gap-8 md:gap-12">
               <RumsSection />
+            </div>
+          </div>
+
+          <div>
+            <h3 className="col-span-full md:text-4xl text-2xl mb-4">
+              Tequila & Mezcal
+            </h3>
+            <div className="flex flex-col gap-8 md:gap-12">
+              <TequilaMezcalSection />
             </div>
           </div>
         </div>
