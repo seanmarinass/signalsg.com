@@ -1,7 +1,4 @@
-"use client";
-
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
 import BarChairImage from "@/assets/images/signal-bar-chairs.png";
 import MainImage from "@/assets/images/signal-main.png";
 import BarImage from "@/assets/images/signal-bar.png";
@@ -9,28 +6,8 @@ import FoodImage from "@/assets/images/signal-food.png";
 import DrinkImage from "@/assets/images/signal-orange-drink.png";
 
 const LandingAbout = () => {
-  const [isInView, setIsInView] = useState(false);
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsInView(true);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <div className="px-5 py-10 md:py-20" id="about" ref={sectionRef}>
+    <div className="px-5 py-10 md:py-20" id="about">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-site-muted mb-8 font-light md:text-2xl">
           01. 약 | About
