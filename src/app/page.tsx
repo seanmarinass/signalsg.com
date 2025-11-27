@@ -1,5 +1,4 @@
 import LandingAbout from "@/components/landing/landing-about";
-import LandingFaq from "@/components/landing/landing-faq";
 import LandingHero from "@/components/landing/landing-hero";
 import LandingMenu from "@/components/landing/landing-menu";
 import LandingVisit from "@/components/landing/landing-visit";
@@ -14,7 +13,6 @@ const Home = () => {
       <LandingAbout />
       <LandingMenu />
       <LandingVisit />
-      <LandingFaq />
     </div>
   );
 };
