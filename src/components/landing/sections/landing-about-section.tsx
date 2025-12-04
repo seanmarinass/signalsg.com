@@ -4,7 +4,7 @@ const LandingAboutSection = () => {
   return (
     <section className="py-10 md:py-20 bg-site-dark-grey" id="about">
       <div className="max-w-7xl mx-auto text-center text-site-light-cream px-5">
-        <h2 className="mb-8 font-light md:text-2xl">01. 약 | About</h2>
+        <h2 className="mb-8 font-light md:text-2xl">02. 약 | About</h2>
 
         <div className="text-xl md:text-3xl max-w-4xl space-y-4 mx-auto flex flex-col items-center justify-center">
           <p>
