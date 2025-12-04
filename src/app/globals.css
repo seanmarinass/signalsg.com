@@ -47,15 +47,17 @@
   --color-site-muted: var(--site-muted);
   
   --color-site-dark-brown: var(--site-dark-brown);
+  --color-site-dark-grey: var(--site-dark-grey);
   --color-site-blue-gray: var(--site-blue-gray);
   --color-site-light-cream: var(--site-light-cream);
-  --color-rust-orange: var(--rust-orange);
+  --color-site-rust-orange: var(--site-rust-orange);
   --color-site-dark-orange: var(--site-dark-orange);
 
 }
 
 :root {
   --site-dark-brown: oklch(26.18% 0.0222 42.0);
+  --site-dark-grey: oklch(22% 0.005 88.8);
   --site-blue-gray: oklch(76.13% 0.0306 193.9);
   --site-light-cream: oklch(90.81% 0.0350 88.8);
   --site-rust-orange: oklch(59.82% 0.1397 49.2);
@@ -107,6 +109,6 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-site-dark-brown text-site-light-cream;
+    @apply bg-site-dark-brown text-site-dark-brown;
   }
 }

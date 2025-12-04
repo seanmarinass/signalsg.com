@@ -9,7 +9,7 @@ import { NAVBAR_DATA } from "@/lib/data/navbar.data";
 const NavbarLarge = () => {
   return (
     <nav className="px-5 py-4  fixed top-0 left-0 right-0 z-40">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto text-site-light-cream">
         <div className="flex items-center gap-12 w-full">
           <Link
             className="text-xl font-semibold hover:opacity-60 transition-opacity"
