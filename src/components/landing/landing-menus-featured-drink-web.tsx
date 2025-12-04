@@ -1,9 +1,8 @@
 import { LandingMenuItem } from "@/lib/data/menu.data";
 import Image from "next/image";
+import { LandingMenusFeaturedDrinkProps } from "../form-components/landing-menus-feaured-drink";
 
-interface LandingMenusFeaturedDrinkProps extends LandingMenuItem {}
-
-const LandingMenusFeaturedDrink = ({
+const LandingMenusFeaturedDrinkWeb = ({
   name,
   korean,
   description,
@@ -34,4 +33,4 @@ const LandingMenusFeaturedDrink = ({
   );
 };
 
-export default LandingMenusFeaturedDrink;
+export default LandingMenusFeaturedDrinkWeb;

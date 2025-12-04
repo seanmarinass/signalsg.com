@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { LANDING_MENU_ITEMS } from "@/lib/data/menu.data";
-import LandingMenusFeaturedDrink from "../landing-menus-featured-drink";
+import LandingMenusFeaturedDrink from "@/components/form-components/landing-menus-feaured-drink";
 
 const LandingMenusSection = () => {
   return (
