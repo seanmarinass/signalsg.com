@@ -8,10 +8,13 @@ import { NAVBAR_DATA } from "@/lib/data/navbar.data";
 
 const NavbarLarge = () => {
   return (
-    <nav className="px-5 py-4 backdrop-blur-sm fixed top-0 left-0 right-0 z-40 bg-site-background/80">
+    <nav className="px-5 py-4  fixed top-0 left-0 right-0 z-40">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-12 w-full">
-          <Link className="text-xl font-semibold" href="/">
+          <Link
+            className="text-xl font-semibold hover:opacity-60 transition-opacity"
+            href="/"
+          >
             SIGNAL
           </Link>
 
@@ -23,7 +26,7 @@ const NavbarLarge = () => {
               <Link
                 href={item.href}
                 key={index}
-                className="hover:text-site-muted transition-colors"
+                className="hover:text-site-light-cream/60 transition-colors"
               >
                 {item.title}
               </Link>

@@ -107,6 +107,6 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-site-background text-site-foreground;
+    @apply bg-site-dark-brown text-site-light-cream;
   }
 }

@@ -10,9 +10,9 @@ const Home = () => {
   return (
     <div>
       <LandingHero />
-      <LandingAbout />
+      {/* <LandingAbout />
       <LandingMenu />
-      <LandingVisit />
+      <LandingVisit /> */}
     </div>
   );
 };
