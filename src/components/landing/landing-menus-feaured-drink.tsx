@@ -1,6 +1,6 @@
 import { LandingMenuItem } from "@/lib/data/menu.data";
-import LandingMenusFeaturedDrinkWeb from "../landing/landing-menus-featured-drink-web";
-import LandingMenusFeaturedDrinkMobile from "../landing/landing-menus-featured-drink-mobile";
+import LandingMenusFeaturedDrinkWeb from "./landing-menus-featured-drink-web";
+import LandingMenusFeaturedDrinkMobile from "./landing-menus-featured-drink-mobile";
 
 export interface LandingMenusFeaturedDrinkProps extends LandingMenuItem {}
 

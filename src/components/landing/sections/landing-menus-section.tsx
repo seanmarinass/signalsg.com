@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { LANDING_MENU_ITEMS } from "@/lib/data/menu.data";
-import LandingMenusFeaturedDrink from "@/components/form-components/landing-menus-feaured-drink";
+import LandingMenusFeaturedDrink from "@/components/landing/landing-menus-feaured-drink";
 
 const LandingMenusSection = () => {
   return (
@@ -9,7 +9,6 @@ const LandingMenusSection = () => {
         <h2 className="font-light md:text-2xl">01. 메뉴 | Menu</h2>
 
         <div className="w-full max-w-5xl mt-8">
-          <h3 className="text-center mb-2">Featured Drinks</h3>
           <div className="mt-2 grid md:grid-cols-2">
             {LANDING_MENU_ITEMS.map((item, index) => (
               <LandingMenusFeaturedDrink key={index} {...item} />

@@ -1,14 +1,33 @@
 "use client";
 
 import { ScrollProgress } from "../ui/scroll-progress";
+import { useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
 
 import Link from "next/link";
 
 import { NAVBAR_DATA } from "@/lib/data/navbar.data";
 
 const NavbarLarge = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY > window.innerHeight;
+      setIsScrolled(scrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="px-5 py-4  fixed top-0 left-0 right-0 z-40">
+    <nav
+      className={cn(
+        "px-5 py-4 fixed top-0 left-0 right-0 z-40 transition-all duration-300",
+        isScrolled && "backdrop-blur-md bg-site-dark-brown/80"
+      )}
+    >
       <div className="max-w-7xl mx-auto text-site-light-cream">
         <div className="flex items-center gap-12 w-full">
           <Link

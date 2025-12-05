@@ -1,6 +1,6 @@
 import { LandingMenuItem } from "@/lib/data/menu.data";
 import Image from "next/image";
-import { LandingMenusFeaturedDrinkProps } from "../form-components/landing-menus-feaured-drink";
+import { LandingMenusFeaturedDrinkProps } from "./landing-menus-feaured-drink";
 
 const LandingMenusFeaturedDrinkWeb = ({
   name,

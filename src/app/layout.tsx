@@ -1,13 +1,13 @@
-import { Montserrat } from "next/font/google";
+import { Inter } from "next/font/google";
 
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer";
 
-const montserrat = Montserrat({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800"],
-  variable: "--font-montserrat",
+  variable: "--font-inter",
 });
 
 const RootLayout = ({
@@ -17,7 +17,7 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={`${montserrat.className}`}>
+      <body className={`${inter.className}`}>
         <Navbar /> {children}
         {/* <Footer /> */}
       </body>

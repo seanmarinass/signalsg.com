@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { LandingMenusFeaturedDrinkProps } from "../form-components/landing-menus-feaured-drink";
+import { LandingMenusFeaturedDrinkProps } from "./landing-menus-feaured-drink";
 
 const LandingMenusFeaturedDrinkMobile = ({
   name,

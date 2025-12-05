@@ -45,13 +45,37 @@
   --color-site-background: var(--site-background);
   --color-site-foreground: var(--site-foreground);
   --color-site-muted: var(--site-muted);
-  
+
   --color-site-dark-brown: var(--site-dark-brown);
   --color-site-dark-grey: var(--site-dark-grey);
   --color-site-blue-gray: var(--site-blue-gray);
   --color-site-light-cream: var(--site-light-cream);
   --color-site-rust-orange: var(--site-rust-orange);
   --color-site-dark-orange: var(--site-dark-orange);
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  @keyframes marquee {
+  from {
+    transform: translateX(0);
+
+    }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+
+    }
+
+  }
+  @keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+
+    }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+
+    }
+
+  }
 
 }
 
@@ -103,7 +127,7 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-site-dark-brown outline-ring/50;
   }
   html {
     scroll-behavior: smooth;
@@ -111,4 +135,16 @@
   body {
     @apply bg-site-dark-brown text-site-dark-brown;
   }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+
+  }
+  body {
+    @apply bg-site-dark-grey text-foreground;
+
+  }
+
 }
