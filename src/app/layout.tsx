@@ -1,13 +1,19 @@
-import { Inter_Tight } from "next/font/google";
+import { Inter, Bebas_Neue } from "next/font/google";
 
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer";
 
-const interTight = Inter_Tight({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["200", "400", "500", "600", "700"],
-  variable: "--font-inter-tight",
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-inter",
+});
+
+const bebasNeue = Bebas_Neue({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-bebas",
 });
 
 const RootLayout = ({
@@ -17,7 +23,9 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={`${interTight.className}`}>
+      <body
+        className={`${inter.variable} ${inter.className} ${bebasNeue.variable}`}
+      >
         <Navbar /> {children}
         <Footer />
       </body>

@@ -1,20 +1,22 @@
-import LandingAbout from "@/components/landing/landing-about";
-import LandingFaq from "@/components/landing/landing-faq";
-import LandingHero from "@/components/landing/landing-hero";
-import LandingMenu from "@/components/landing/landing-menu";
-import LandingVisit from "@/components/landing/landing-visit";
+import LandingAboutSection from "@/components/landing/sections/landing-about-section";
+import LandingHeroSection from "@/components/landing/sections/landing-hero-section";
 import { landingPageMetadata } from "@/lib/config/metadata.config";
+import LandingMenusSection from "@/components/landing/sections/landing-menus-section";
+import LandingQuizSection from "@/components/landing/sections/landing-quiz-section";
+import LandingVisitSection from "@/components/landing/sections/landing-visit-section";
 
 export const metadata = landingPageMetadata;
 
 const Home = () => {
   return (
     <div>
-      <LandingHero />
-      <LandingAbout />
-      <LandingMenu />
-      <LandingVisit />
-      <LandingFaq />
+      <LandingHeroSection />
+      <LandingMenusSection />
+      <LandingAboutSection />
+      {/* <LandingQuizSection /> */}
+      <LandingVisitSection />
+      {/* <LandingMenu /> */}
+      {/* <LandingVisit /> */}
     </div>
   );
 };
