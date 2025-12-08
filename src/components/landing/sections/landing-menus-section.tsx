@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { LANDING_MENU_ITEMS } from "@/lib/data/menu.data";
 import LandingMenusFeaturedDrink from "@/components/landing/landing-menus-feaured-drink";
@@ -20,12 +22,14 @@ const LandingMenusSection = () => {
           <Button
             variant="outline"
             className="w-full text-site-light-cream border border-site-rust-orange md:text-lg bg-site-rust-orange z-10"
+            onClick={() => window.open("/signal-drinks-menu.pdf", "_blank")}
           >
             View Drinks Menu
           </Button>
           <Button
             variant="outline"
             className="w-full text-site-rust-orange border border-site-rust-orange md:text-lg bg-site-light-cream z-10"
+            onClick={() => window.open("/signal-drinks-menu.pdf", "_blank")}
           >
             View Food Menu
           </Button>
