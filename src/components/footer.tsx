@@ -5,20 +5,17 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="px-5">
-      <div className="grid grid-cols-4 items-center justify-between font-extralight max-w-7xl mx-auto border-t pt-4 pb-10 lg:pb-40 border-site-foreground">
-        <div className="text-xs lg:text-base col-span-3">
-          © {currentYear} Signal
+    <footer className="px-5 py-10">
+      <div className="text-center text-site-light-cream">
+        <div className="space-y-2 flex items-center justify-center">
+          <Link href={INSTAGRAM_LINK} target="_blank">
+            Instagram
+          </Link>
         </div>
 
-        <div className="space-y-4">
-          <p className="text-site-muted font-medium">Links</p>
-          <div className="space-y-2">
-            <Link href={INSTAGRAM_LINK} target="_blank">
-              Instagram
-            </Link>
-          </div>
-        </div>
+        <p className="text-xs text-site-light-cream/50 mt-16">
+          © {currentYear} Signal
+        </p>
       </div>
     </footer>
   );

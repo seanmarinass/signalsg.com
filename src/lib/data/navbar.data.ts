@@ -1,10 +1,10 @@
 export const NAVBAR_DATA = [
   {
     title: "Menu",
-    href: "/menu",
+    href: "#menus",
   },
   {
-    title: "Contact",
-    href: "/contact",
+    title: "Quiz",
+    href: "/quiz",
   },
 ];
