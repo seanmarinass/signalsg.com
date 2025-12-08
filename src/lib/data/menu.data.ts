@@ -1,7 +1,7 @@
-import SeoulSlingImage from "@/assets/images/featured-drinks/seoul-sling.webp";
-import SeaOfBusanImage from "@/assets/images/featured-drinks/sea-of-busan.webp";
-import JejuHallaSparkleImage from "@/assets/images/featured-drinks/jeju-halla-sparkle.webp";
-import JeonjuOmijaHighballeImage from "@/assets/images/featured-drinks/jeonju-omija-highball.webp";
+import SeoulSlingImage from "@/assets/images/drinks/seoul-sling.webp";
+import SeaOfBusanImage from "@/assets/images/drinks/sea-of-busan.webp";
+import JejuHallaSparkleImage from "@/assets/images/drinks/jeju-halla-sparkle.webp";
+import JeonjuOmijaHighballeImage from "@/assets/images/drinks/jeonju-omija-highball.webp";
 import { StaticImageData } from "next/image";
 
 export interface LandingMenuItem {

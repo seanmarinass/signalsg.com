@@ -30,8 +30,8 @@ const NavbarLarge = () => {
     <nav
       className={cn(
         "px-5 py-4 fixed top-0 left-0 right-0 z-40 transition-all duration-300",
-        isScrolled && "backdrop-blur-md bg-site-dark-brown/80",
-        isQuizPage && "bg-site-dark-brown"
+        isScrolled && "backdrop-blur-md bg-site-dark-grey",
+        isQuizPage && "bg-site-dark-grey"
       )}
     >
       <div className="max-w-7xl mx-auto text-site-light-cream">
