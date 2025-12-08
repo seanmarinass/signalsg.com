@@ -9,15 +9,39 @@ import {
   DropdownMenuGroup,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
-import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NAVBAR_DATA } from "@/lib/data/navbar.data";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
+import { useNavigation } from "@/hooks/use-navigation";
 
 const NavbarSmall = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const { navigate } = useNavigation();
+
+  const pathname = usePathname();
+  const isQuizPage = pathname.toLowerCase().includes("quiz");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY > window.innerHeight;
+      setIsScrolled(scrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="px-5 py-4 backdrop-blur-sm">
-      <div className="max-w-7xl mx-auto">
+    <nav
+      className={cn(
+        "px-5 py-4 fixed top-0 left-0 right-0 z-40 transition-all duration-300",
+        isScrolled && "backdrop-blur-md bg-site-dark-grey",
+        isQuizPage && "bg-site-dark-grey"
+      )}
+    >
+      <div className="max-w-7xl mx-auto text-site-light-cream">
         <div className="flex items-center gap-12 w-full">
           <p className="text-xl font-semibold">SIGNAL</p>
 
@@ -27,25 +51,25 @@ const NavbarSmall = () => {
           <DropdownMenu onOpenChange={setIsOpen} open={isOpen}>
             <DropdownMenuTrigger className="cursor-pointer">
               {isOpen ? (
-                <X className="size-6 text-site-white" />
+                <X className="size-6 text-site-light-cream" />
               ) : (
-                <Menu className="size-6 text-site-white" />
+                <Menu className="size-6 text-site-light-cream" />
               )}
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-[100vw] rounded-none border-0 bg-site-muted text-site-white p-0 py-4 flex flex-col gap-4 shadow-none mt-4">
+            <DropdownMenuContent className="w-[100vw] rounded-none border-0 bg-site-light-cream text-site-dark-brown p-0 py-4 flex flex-col gap-4 shadow-none mt-4">
               <DropdownMenuGroup>
                 <div className="flex flex-col gap-2">
                   {NAVBAR_DATA.map(({ href, title }, index) => (
-                    <Link
-                      href={href}
+                    <button
                       key={index}
-                      className="text-2xl font-medium px-5"
+                      className="text-2xl font-medium px-5 text-left"
                       onClick={() => {
+                        navigate(href);
                         setIsOpen(false);
                       }}
                     >
                       {title}
-                    </Link>
+                    </button>
                   ))}
                 </div>
               </DropdownMenuGroup>

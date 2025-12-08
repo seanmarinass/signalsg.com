@@ -8,9 +8,11 @@ import Link from "next/link";
 
 import { NAVBAR_DATA } from "@/lib/data/navbar.data";
 import { usePathname } from "next/navigation";
+import { useNavigation } from "@/hooks/use-navigation";
 
 const NavbarLarge = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { navigate } = useNavigation();
 
   const pathname = usePathname();
 
@@ -48,13 +50,13 @@ const NavbarLarge = () => {
           </div>
           <div className="flex gap-12">
             {NAVBAR_DATA.map((item, index) => (
-              <Link
-                href={item.href}
+              <button
+                onClick={() => navigate(item.href)}
                 key={index}
-                className="hover:text-site-light-cream/60 transition-colors"
+                className="hover:text-site-light-cream transition-colors cursor-pointer"
               >
                 {item.title}
-              </Link>
+              </button>
             ))}
           </div>
         </div>
