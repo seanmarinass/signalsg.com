@@ -11,7 +11,8 @@ import {
 } from "@/lib/data/quiz.data";
 import { useEffect, useState } from "react";
 import MbtiSignatureDrinkQuizStep0Form from "./signature-drink-quiz-step-0-form";
-import MbtiSignatureDrinkQuizStep1Form from "./signature-drink-quiz-step-1-form";
+import MbtiSignatureDrinkMultiStepForm from "../signature-drink-multi-step-form";
+import MbtiSignatureDrinkQuizStep5Form from "./signature-drink-quiz-step-5-form";
 
 export const MbtiSignatureDrinkQuizForm = () => {
   const [matchedQuestionMapping, setMatchedQuestionMapping] =
@@ -43,12 +44,15 @@ export const MbtiSignatureDrinkQuizForm = () => {
   return (
     <form className="border-site-dark-brown p-4 md:p-10 h-[50vh] w-full border">
       {watchedStep === 0 && <MbtiSignatureDrinkQuizStep0Form form={form} />}
-      {watchedStep === 1 && (
-        <MbtiSignatureDrinkQuizStep1Form
+
+      {watchedStep >= 1 && watchedStep <= 4 && (
+        <MbtiSignatureDrinkMultiStepForm
           form={form}
-          questionMapping={matchedQuestionMapping}
+          currentStep={watchedStep}
         />
       )}
+
+      {watchedStep === 5 && <MbtiSignatureDrinkQuizStep5Form form={form} />}
     </form>
   );
 };

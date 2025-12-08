@@ -4,9 +4,7 @@ import { z } from "zod";
  * E for extrovert
  * I for introvert
  */
-const QuizAnswerSchema = z.enum(["E", " I"], {
-  message: "Please select an option",
-});
+const QuizAnswerSchema = z.string({ message: "Please select an option" });
 
 export type SignatureDrinkQuizFormSchemaData = z.infer<
   typeof SignatureDrinkQuizFormSchema

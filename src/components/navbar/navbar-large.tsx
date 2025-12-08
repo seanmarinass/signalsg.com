@@ -7,9 +7,14 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 import { NAVBAR_DATA } from "@/lib/data/navbar.data";
+import { usePathname } from "next/navigation";
 
 const NavbarLarge = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const pathname = usePathname();
+
+  const isQuizPage = pathname.toLowerCase().includes("quiz");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,7 +30,8 @@ const NavbarLarge = () => {
     <nav
       className={cn(
         "px-5 py-4 fixed top-0 left-0 right-0 z-40 transition-all duration-300",
-        isScrolled && "backdrop-blur-md bg-site-dark-brown/80"
+        isScrolled && "backdrop-blur-md bg-site-dark-brown/80",
+        isQuizPage && "bg-site-dark-brown"
       )}
     >
       <div className="max-w-7xl mx-auto text-site-light-cream">

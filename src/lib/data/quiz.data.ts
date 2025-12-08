@@ -7,20 +7,20 @@ export type QuestionMapping = {
 
 export const QUIZ_QUESTION_ANSWER_MAPPING: Record<string, QuestionMapping> = {
   1: {
-    question: "When you walk into a bar, you usually…",
+    question: "When I walk into a bar, I usually…",
     options: [
       {
         text: "Head straight to the crowd and start chatting",
         value: "E",
       },
       {
-        text: "Find a comfy spot and let the vibe come to you",
+        text: "Find a comfy spot and let the vibe come to me",
         value: "I",
       },
     ],
   },
   2: {
-    question: "When you look around the bar, you notice…",
+    question: "When I look around the bar, I notice…",
     options: [
       {
         text: "The lighting, the crowd, and what's happening right now",
@@ -33,27 +33,27 @@ export const QUIZ_QUESTION_ANSWER_MAPPING: Record<string, QuestionMapping> = {
     ],
   },
   3: {
-    question: "When choosing a drink, you mostly go with…",
+    question: "When choosing a drink, I mostly go with…",
     options: [
       {
         text: "What makes sense — something strong, balanced, and classic",
         value: "T",
       },
       {
-        text: "What feels right — something that matches your mood",
+        text: "What feels right — something that matches my mood",
         value: "F",
       },
     ],
   },
   4: {
-    question: "Planning your night out, you…",
+    question: "Planning my night out, I...",
     options: [
       {
         text: "Make a reservation, plan the route, and get everyone on time",
         value: "J",
       },
       {
-        text: "Decide on the spot and see where the night takes you",
+        text: "Decide on the spot and see where the night takes me",
         value: "P",
       },
     ],
