@@ -14,7 +14,7 @@ const LandingHeroSection = () => {
       />
       <div className="mx-auto size-full relative z-10 flex flex-col py-16 md:p-24">
         <div className="text-center mt-auto mx-auto">
-          <h1 className="text-7xl md:text-9xl font-bold text-site-light-cream">
+          <h1 className="text-7xl md:text-9xl font-bold text-site-light-cream tracking-tighter">
             시그널
             <br />
             SIGNAL
