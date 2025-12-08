@@ -14,6 +14,7 @@ import { NAVBAR_DATA } from "@/lib/data/navbar.data";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { useNavigation } from "@/hooks/use-navigation";
+import Link from "next/link";
 
 const NavbarSmall = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,7 +44,9 @@ const NavbarSmall = () => {
     >
       <div className="max-w-7xl mx-auto text-site-light-cream">
         <div className="flex items-center gap-12 w-full">
-          <p className="text-xl font-semibold">SIGNAL</p>
+          <Link className="text-xl font-semibold" href="/">
+            SIGNAL
+          </Link>
 
           <div className="relative flex-1">
             <ScrollProgress className="absolute" />
