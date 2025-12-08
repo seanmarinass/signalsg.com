@@ -3,10 +3,8 @@ import { LandingMenusFeaturedDrinkProps } from "./landing-menus-feaured-drink";
 
 const LandingMenusFeaturedDrinkMobile = ({
   name,
-  korean,
   description,
   ingredients,
-  city,
   image,
 }: LandingMenusFeaturedDrinkProps) => {
   return (

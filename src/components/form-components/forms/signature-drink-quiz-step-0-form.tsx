@@ -1,14 +1,9 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm, UseFormReturn, useWatch } from "react-hook-form";
-import {
-  SignatureDrinkQuizFormSchema,
-  SignatureDrinkQuizFormSchemaData,
-} from "../schemas/signature-drink-quiz-form-schema";
-import { QUIZ_QUESTION_ANSWER_MAPPING } from "@/lib/data/quiz.data";
-import { useEffect } from "react";
+
+import { UseFormReturn } from "react-hook-form";
+import { SignatureDrinkQuizFormSchemaData } from "../schemas/signature-drink-quiz-form-schema";
 
 interface MbtiSignatureDrinkQuizStep0FormProps {
   form: UseFormReturn<SignatureDrinkQuizFormSchemaData>;
