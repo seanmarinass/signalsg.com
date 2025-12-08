@@ -12,8 +12,6 @@ const LandingMenusFeaturedDrinkWeb = ({
       <div className="aspect-square w-7/10 bg-gradient-to-b from-[#FF7E3F]/80 via-[#FF7E3F]/10 to-transparent absolute rounded-full" />
 
       <div className="z-10 mx-auto flex flex-col items-center max-w-sm">
-        <p className="text-5xl text-center font-semibold">{name}</p>
-
         <Image
           src={image.src}
           alt={image.alt}
@@ -21,7 +19,8 @@ const LandingMenusFeaturedDrinkWeb = ({
         />
 
         <div className="text-center">
-          <p className="text-xl">{description}</p>
+          <p className="text-4xl text-center font-semibold">{name}</p>
+          <p className="text-xl mt-4">{description}</p>
           <p className="text-site-rust-orange mt-2">
             {ingredients.join(" • ")}
           </p>
