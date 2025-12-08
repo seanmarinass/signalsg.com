@@ -13,7 +13,7 @@ const Home = () => {
       <LandingHeroSection />
       <LandingMenusSection />
       <LandingAboutSection />
-      <LandingQuizSection />
+      {/* <LandingQuizSection /> */}
       <LandingVisitSection />
       {/* <LandingMenu /> */}
       {/* <LandingVisit /> */}

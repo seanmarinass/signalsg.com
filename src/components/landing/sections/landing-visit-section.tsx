@@ -1,14 +1,14 @@
 const LandingVisitSection = () => {
   return (
-    <div className="px-5 py-10 md:py-20 bg-site-dark-grey" id="visit">
-      <div className="max-w-7xl mx-auto space-y-8 text-site-light-cream">
-        <h2 className="font-light md:text-2xl text-center">04. 방문 | Visit</h2>
+    <div className="px-5 py-10 md:py-20 bg-site-light-cream" id="visit">
+      <div className="max-w-7xl mx-auto space-y-8 text-site-background">
+        <h2 className="font-light md:text-2xl text-center">03. 방문 | Visit</h2>
 
         <div className="grid md:grid-cols-3 gap-10">
           <div className="md:col-span-2 opacity-90">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8248993994553!2d103.84123641264192!3d1.2786059987038667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190012379125%3A0xabeb887c851b0ce3!2sSIGNAL!5e0!3m2!1sen!2ssg!4v1763114013719!5m2!1sen!2ssg"
-              className="w-full h-96 md:h-[600px]"
+              className="w-full h-96 md:h-[600px] border-2 border-site-background"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -20,7 +20,7 @@ const LandingVisitSection = () => {
 
             <div className="gap-8 flex flex-col">
               <div className="text-base md:text-lg font-light">
-                <h3 className="text-site-light-cream/60 mb-2 w-fit inline-flex pb-1 border-b border-site-light-cream/60">
+                <h3 className="text-site-background/60 mb-2 w-fit inline-flex pb-1 border-b border-site-background/60">
                   Location
                 </h3>
                 <p>76 Tanjong Pagar Road,</p>
@@ -28,7 +28,7 @@ const LandingVisitSection = () => {
               </div>
 
               <div className="text-base md:text-lg font-light">
-                <h3 className="text-site-light-cream/60 mb-2 w-fit inline-flex pb-1 border-b border-site-light-cream/60">
+                <h3 className="text-site-background/60 mb-2 w-fit inline-flex pb-1 border-b border-site-background/60">
                   Opening Hours
                 </h3>
                 <p>Mon - Sun</p>
@@ -36,7 +36,7 @@ const LandingVisitSection = () => {
               </div>
 
               <div className="text-base md:text-lg font-light">
-                <h3 className="text-site-light-cream/60 mb-2 w-fit inline-flex pb-1 border-b border-site-light-cream/60">
+                <h3 className="text-site-background/60 mb-2 w-fit inline-flex pb-1 border-b border-site-background/60">
                   Contact Us
                 </h3>
                 <p>+65 9899 0742</p>

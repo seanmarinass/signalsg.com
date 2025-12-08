@@ -7,11 +7,11 @@ export interface LandingMenusFeaturedDrinkProps extends LandingMenuItem {}
 const LandingMenusFeaturedDrink = (props: LandingMenusFeaturedDrinkProps) => {
   return (
     <div>
-      <div className="hidden md:block">
+      <div className="hidden md:block h-full">
         <LandingMenusFeaturedDrinkWeb {...props} />
       </div>
 
-      <div className="block md:hidden">
+      <div className="block md:hidden h-full">
         <LandingMenusFeaturedDrinkMobile {...props} />
       </div>
     </div>

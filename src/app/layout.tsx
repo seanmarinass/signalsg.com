@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Inter, Bebas_Neue } from "next/font/google";
 
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
@@ -10,6 +10,12 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const bebasNeue = Bebas_Neue({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-bebas",
+});
+
 const RootLayout = ({
   children,
 }: Readonly<{
@@ -17,9 +23,11 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body
+        className={`${inter.variable} ${inter.className} ${bebasNeue.variable}`}
+      >
         <Navbar /> {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

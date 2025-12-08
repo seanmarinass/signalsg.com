@@ -5,8 +5,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="px-5">
-      <div className="grid grid-cols-4 items-center justify-between font-extralight max-w-7xl mx-auto border-t pt-4 pb-10 lg:pb-40 border-site-foreground">
+    <footer className="px-5 bg-site-light-cream">
+      <div className="grid grid-cols-4 items-center justify-between font-extralight max-w-7xl mx-auto border-t pt-4 pb-10 lg:pb-40 border-site-dark-brown">
         <div className="text-xs lg:text-base col-span-3">
           © {currentYear} Signal
         </div>
